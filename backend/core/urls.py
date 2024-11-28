@@ -7,14 +7,14 @@ from .forms import LoginForm
 from .views import test_email, signup
 
 from django.contrib.auth.views import (
-    LogoutView, 
-    PasswordResetView, 
-    PasswordResetDoneView, 
+    LogoutView,
+    PasswordResetView,
+    PasswordResetDoneView,
     PasswordResetConfirmView,
     PasswordResetCompleteView
 )
 
-app_name = 'core'  
+app_name = 'core'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', obtain_auth_token),
